@@ -1,7 +1,10 @@
 ﻿@model IEnumerable<MiniBlog.Models.Page>
+@*@using MiniBlog.DAL*@
 
 @{
     ViewBag.Title = "Index";
+
+    //public BlogContext db = new BlogContext();
 }
 
 <h2>Index</h2>
@@ -37,6 +40,10 @@
         <td>
             @Html.ActionLink("Edit", "Edit", new { id=item.ID }) |
             @Html.ActionLink("View Page", "Details", new { id=item.ID }) |
+            @{ 
+//ViewBag.PageCategory = db.PageCategories.Where(id => id == item.ID)
+//if (item.PageCategory) { }
+            }
             @Html.ActionLink("Set Category", "Create", "PageCategories", new { id = item.ID }, null) |
             @Html.ActionLink("Edit Category", "Edit", "PageCategories", new { id = item.ID }, null) |
             @Html.ActionLink("Delete", "Delete", new { id=item.ID })

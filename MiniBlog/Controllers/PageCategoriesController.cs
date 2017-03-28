@@ -56,12 +56,13 @@ namespace MiniBlog.Controllers
             {
                 db.PageCategories.Add(pageCategory);
                 db.SaveChanges();
-                return RedirectToAction("Index");
+                return RedirectToAction("Index", "Pages", "");
             }
 
             ViewBag.CategoryID = new SelectList(db.Categories, "CategoryID", "Name", pageCategory.CategoryID);
             ViewBag.PageID = new SelectList(db.Pages, "ID", "Title", pageCategory.PageID);
-            return View(pageCategory);
+            return View();
+            //return View(pageCategory);
         }
 
         // GET: PageCategories/Edit/5
@@ -78,7 +79,9 @@ namespace MiniBlog.Controllers
             }
             ViewBag.CategoryID = new SelectList(db.Categories, "CategoryID", "Name", pageCategory.CategoryID);
             ViewBag.PageID = new SelectList(db.Pages, "ID", "Title", pageCategory.PageID);
-            return View(pageCategory);
+
+            return View();
+           //return View(pageCategory);
         }
 
         // POST: PageCategories/Edit/5
@@ -92,11 +95,12 @@ namespace MiniBlog.Controllers
             {
                 db.Entry(pageCategory).State = EntityState.Modified;
                 db.SaveChanges();
-                return RedirectToAction("Index");
+                return RedirectToAction("Index", "Pages", "");
             }
             ViewBag.CategoryID = new SelectList(db.Categories, "CategoryID", "Name", pageCategory.CategoryID);
             ViewBag.PageID = new SelectList(db.Pages, "ID", "Title", pageCategory.PageID);
-            return View(pageCategory);
+            return View();
+            //return View(pageCategory);
         }
 
         // GET: PageCategories/Delete/5

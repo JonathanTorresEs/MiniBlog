@@ -80,3 +80,7 @@ C:\Users\Polaris\Documents\ITIC\8vo Semestre\Taller Vertical\MiniBlog\MiniBlog\b
 C:\Users\Polaris\Documents\ITIC\8vo Semestre\Taller Vertical\MiniBlog\MiniBlog\obj\Debug\MiniBlog.csprojResolveAssemblyReference.cache
 C:\Users\Polaris\Documents\ITIC\8vo Semestre\Taller Vertical\MiniBlog\MiniBlog\obj\Debug\MiniBlog.dll
 C:\Users\Polaris\Documents\ITIC\8vo Semestre\Taller Vertical\MiniBlog\MiniBlog\obj\Debug\MiniBlog.pdb
+C:\Users\Polaris\Documents\ITIC\8vo Semestre\Taller Vertical\MiniBlog\MiniBlog\bin\Markdown.dll
+C:\Users\Polaris\Documents\ITIC\8vo Semestre\Taller Vertical\MiniBlog\MiniBlog\bin\CommonMark.dll
+C:\Users\Polaris\Documents\ITIC\8vo Semestre\Taller Vertical\MiniBlog\MiniBlog\bin\CommonMark.pdb
+C:\Users\Polaris\Documents\ITIC\8vo Semestre\Taller Vertical\MiniBlog\MiniBlog\bin\CommonMark.xml

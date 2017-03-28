@@ -1,4 +1,5 @@
 ﻿@model MiniBlog.Models.Page
+    @using HeyRed.MarkdownSharp
 
 @{
     ViewBag.Title = "Details";
@@ -53,7 +54,8 @@
             <table class="table">
                     <tr>
                         <td>
-                           @Html.DisplayFor(model => model.Content, new { style = "width:1000px;height:100px;" }))
+                           @Html.Raw(new Markdown().Transform(Model.Content))
+                            @*@Html.DisplayFor(model => model.Content, new { style = "width:1000px;height:100px;" }))*@
                         </td>
                     </tr>
             </table>

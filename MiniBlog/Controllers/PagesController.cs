@@ -18,6 +18,8 @@ namespace MiniBlog.Controllers
         // GET: Pages
         public ActionResult Index()
         {
+            //ViewBag.PageCategories = db.PageCategories.ToList();
+            //ViewBag.PageCategories = new SelectList(db.PageCategories, "CategoryID", "Name", );
             return View(db.Pages.ToList());
         }
 
